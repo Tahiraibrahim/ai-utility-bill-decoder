@@ -1,0 +1,676 @@
+bill_id,question_id,question,answer
+IESCO_0002,Q1,Is this a net-metered (solar) connection or a standard connection? How did you tell?,"Based on the provided bill, this is a **standard connection** (not net-metered). 
+
+**How I can tell:**
+* **No solar indicators:** There are no readings for exported electricity (such as ""Off-Peak Export"" or ""Peak Export"") in the Meter Info section, which are typical for net-metered bills.
+* **AMI meter note:** The text at the bottom right states, ""This is automatic system generated bill of your AMI meter,"" indicating an Advanced Metering Infrastructure (smart meter) rather than a bi-directional net meter."
+IESCO_0002,Q2,Which month in the last 12 months had the highest units consumed?,"Based on the ""Bill History"" section of the provided bill, the month in the last 12 months with the highest units consumed is **October (Oct 25)** with **656 units**."
+IESCO_0002,Q3,"How much fuel adjustment am I being charged (shown as FPA or FCA on the bill), and for which month?","Based on the provided bill:
+
+*   **Fuel Adjustment Charge (Total FPA):** 370.76 (Rs.)
+*   **Month:** The bill month is **Aug 26** (Bill Month field at the top right). There is also a handwritten note mentioning ""جون-26"" (June 26) regarding an FPA calculation of 412 units at 0.7503, but the official billing system displays the Total FPA amount as 370.76 for the current billing cycle."
+IESCO_0002,Q4,"If I don't pay on time, what late payment surcharges will be added?","Based on the bill, the late payment surcharge (L.P. Surcharge) is **1,491**. 
+
+* **Payable within due date (24-Aug-26):** 69,897
+* **Payable after due date (27-Aug-26):** 71,388 (or 72,878 depending on the specific column breakdown)."
+IESCO_0002,Q5,Am I consuming more units than in the same month last year?,"Based on the bill provided, the information needed to answer this question is missing. 
+
+While the current bill shows consumption of **676 units** for the current month (August 2026), the ""Bill History"" section does not provide the corresponding unit consumption data for August of last year (August 2025). Therefore, a comparison cannot be made."
+IESCO_0002,Q6,"What are my average monthly units consumed, and how does this month compare?","Based on the provided bill:
+
+* **This month's consumption (AUG 26):** **676 units** (as shown in the ""Meter Info"" section).
+* **Average monthly consumption:** **310 units** (calculated from the past 12 months listed in the ""Bill History"" table, which total 3,718 units).
+* **Comparison:** This month's consumption (676 units) is **366 units higher** than your 12-month average (more than double)."
+IESCO_0002,Q7,How many more units do I consume in summer (June-August) than in winter (December-February)?,"Based on the ""Bill History"" table provided in the bill, here are the electricity consumption units for the requested months:
+
+*   **Summer (June – August):**
+    *   June: 412 units
+    *   July: 525 units
+    *   August: *Missing from history*
+    *   *Subtotal (Jun + Jul):* 937 units
+
+*   **Winter (December – February):**
+    *   December: 143 units
+    *   January: 155 units
+    *   February: 175 units
+    *   *Subtotal:* 473 units
+
+**Calculation:**
+937 units (Summer available) - 473 units (Winter) = **464 more units** consumed in June and July compared to the winter months. 
+
+*Note: The exact total difference cannot be calculated because the consumption data for August is missing from the history table.*"
+IESCO_0002,Q8,"Looking at the payments for the 12 months shown on the bill, have I been paying every bill?","Based on the ""Bill History"" section, **no**, you have not been paying every bill. 
+
+While payments match the bill amounts for October 2025 through July 2026, the entry for **September 2025 shows a bill amount of 32,414 with a payment of 0**, meaning that month's bill was left unpaid."
+IESCO_0002,Q9,Have my units consumed gone up or down over the last 3 months?,"Based on the ""BILL HISTORY"" section of the bill, your electricity consumption (units consumed) has **gone up** significantly over the last 3 months. 
+
+Looking at the most recent months (Year 26 column):
+* **May:** 267 units
+* **Jun:** 412 units
+* **Jul:** 525 units"
+IESCO_0002,Q10,"Based on the 12 months trend, how many units should I expect to consume next month?","Based on the 12-month consumption trend provided in the bill history table, you consumed the following units (months reading left to right, then down):
+
+* **Sep 25:** 597
+* **Oct 25:** 656
+* **Nov 25:** 182
+* **Dec 25:** 143
+* **Jan 26:** 155
+* **Feb 26:** 142
+* **Mar 26:** 175
+* **Apr 26:** 154
+* **May 26:** 267
+* **Jun 26:** 412
+* **Jul 26:** 525
+* **Aug 26 (Current Month):** 676
+
+**Next Month's Expectation (Estimated):** 
+The information to definitively predict next month's exact consumption is missing, as future usage depends on your habits. However, looking at the historical trend, your consumption historically drops significantly in the autumn months (e.g., dropping from 597/656 in Sep/Oct down to 182 in November). Therefore, you can roughly expect your consumption to decrease from the current peak of 676 units, likely falling somewhere between **180 and 450 units**, depending on seasonal weather patterns and appliance usage."
+IESCO_0002,Q11,"If I wanted to spread my electricity cost evenly across the year, how much should I set aside each month?","Based on the provided bill, here is how to calculate your average monthly cost:
+
+* **Missing Information:** The bill only shows the historical costs for the past 12 months (Sep 25 through Jul 26), but not every month has a listed bill amount. Specifically, bills are missing for Sep '25, Oct '25, Nov '25, Dec '25, and Jan '26. 
+* **Available Data:** 
+  * Feb '26: 13,546
+  * Mar '26: 6,844
+  * Apr '26: 20,670
+  * May '26: 12,125
+  * Jun '26: 34,613
+  * Jul '26: 28,959
+  * *(Current Month - Aug '26 Current Bill: 38,323)*
+
+**Estimate Calculation:**
+If we average the **6 available historical months** (Feb through Jul), the total is 116,757. Divided by 6 months, the average is **19,460 per month**. 
+
+If we include the **current month (Aug '26)** for a total of 7 months, the sum is 155,080, which gives an average of **22,154 per month**.
+
+**Estimated Monthly Set-Aside:** Between **19,460 and 22,154** per month (based on available data, excluding months with missing bill records)."
+IESCO_0002,Q12,"If I consume the same units as last month, what would my bill be roughly?","Based on the provided bill, here is the breakdown to estimate your bill if you consume the same units as last month:
+
+* **Units Consumed This Month:** 676 units (Current Reading 6625.57 - Previous Reading 5949.08).
+* **Current Bill Amount:** 69,897 Rs. (Payable within due date).
+
+**Missing Information:** The bill shows a breakdown for the current month's consumption (676 units), but previous months' bills in the ""Bill History"" section only show units ranging from 142 to 597 units. There is no historical month in the table that shows an identical consumption of 676 units to compare against. 
+
+Therefore, **if you consume the exact same units as this month (676 units) again next month, your bill would roughly be the same amount: 69,897 Rs.** (subject to any changes in government taxes, fuel price adjustments, or surcharges)."
+IESCO_0003,Q1,Is this a net-metered (solar) connection or a standard connection? How did you tell?,"This is a **standard connection**, not a net-metered (solar) connection. 
+
+**How I can tell:**
+* The ""Meter Info"" section only lists a single **Present Reading** (1213.9) and **Previous Reading** (1156.14) to calculate consumed units (58 units), which is typical for a one-way standard meter. 
+* There are no separate fields or readings for export/fed-back energy (generation), which are required on net-metered bills."
+IESCO_0003,Q2,Which month in the last 12 months had the highest units consumed?,"Based on the ""BILL HISTORY"" section of the provided bill, the month in the last 12 months with the highest units consumed is **July 2026** (Jul 26) with **70 units**."
+IESCO_0003,Q3,"How much fuel adjustment am I being charged (shown as FPA or FCA on the bill), and for which month?","Based on the provided bill:
+
+* **Fuel Price Adjustment (FPA):** 172
+* **Month:** September 2026 (SEP 26)"
+IESCO_0003,Q4,"If I don't pay on time, what late payment surcharges will be added?","Based on the bill, if you pay after the due date (12 OCT 26), the total payable amount increases from **1,649** (payable within due date) to **1,773** (payable after due date). 
+
+This represents an additional late payment surcharge of **124** (labeled as ""124"" under the L.P Surcharge section)."
+IESCO_0003,Q5,Am I consuming more units than in the same month last year?,"Based on the bill image provided:
+
+* **Current Month Consumption (Sep 26):** 58 units (calculated as Present Reading 1213.9 minus Previous Reading 1156.14, rounded to the bill's stated units).
+* **Same Month Last Year Consumption (Sep 25):** 75 units.
+
+**Answer:** No, you are consuming fewer units this year (58 units) compared to the same month last year (75 units)."
+IESCO_0003,Q6,"What are my average monthly units consumed, and how does this month compare?","Based on the provided bill:
+
+* **This month's consumption (Sep 26):** 58 units (as shown in the Meter Info section).
+* **Average monthly units consumed:** 41.2 units (calculated from the visible 12-month bill history table ranging from Sep 25 to Aug 26, totaling 494 units).
+* **Comparison:** This month's consumption of 58 units is **16.8 units higher** than your 12-month average."
+IESCO_0003,Q7,How many more units do I consume in summer (June-August) than in winter (December-February)?,"Based on the bill history provided:
+
+* **Summer Consumption (June – August):**
+  * Jun: 48 units
+  * Jul: 70 units
+  * Aug: 49 units
+  * **Total Summer:** 167 units
+
+* **Winter Consumption (December – February):**
+  * Dec: 40 units
+  * Jan: 50 units
+  * Feb: 27 units
+  * **Total Winter:** 117 units
+
+You consumed **50 more units** in the summer than in the winter (167 summer units - 117 winter units)."
+IESCO_0003,Q8,"Looking at the payments for the 12 months shown on the bill, have I been paying every bill?","Based on the ""BILL HISTORY"" section of the bill, you have not paid every bill. 
+
+Specifically, looking at the 12-month history:
+* **Sep 25:** Bill was 816, Payment was **850** (Overpaid/Includes arrears)
+* **Oct 25:** Bill was 506, Payment was **548** 
+* **Nov 25:** Bill was 385, Payment was **385**
+* **Dec 25:** Bill was 539, Payment was **539**
+* **Jan 26:** Bill was 676, Payment was **732**
+* **Feb 26:** Bill was 744, Payment was **775**
+* **Mar 26:** Bill was 914, Payment was **914**
+* **Apr 26:** Bill was 1066, Payment was **1066**
+* **May 26:** Bill was 1034, Payment was **1034**
+* **Jun 26:** Bill was 1271, Payment was **1271**
+* **Jul 26:** Bill was 1470, Payment was **1470**
+* **Aug 26:** Bill was 1277, Payment was **1277**
+
+However, looking at the **STATUS** column above the month names, every month is marked with a **solid green block** indicating they have all been paid or settled in full up to this billing cycle."
+IESCO_0003,Q9,Have my units consumed gone up or down over the last 3 months?,"Based on the **Bill History** section, your units consumed over the last 3 months (June, July, and August) have **gone up**:
+
+*   **Jun 26:** 48 units
+*   **Jul 26:** 70 units
+*   **Aug 26:** 49 units *(Note: While August is slightly lower than July, looking at the 3-month trend from June to August, consumption has increased overall).*"
+IESCO_0003,Q10,"Based on the 12 months trend, how many units should I expect to consume next month?","Based on the provided bill, information is missing. The ""BILL HISTORY"" section only shows past consumption for 12 months (Sep 25 to Aug 26), but it does not provide a forecast or trend analysis to predict next month's consumption. 
+
+However, looking at the historical monthly units consumed in the table:
+* **Sep 25:** 75 units
+* **Oct 25:** 46 units
+* **Nov 25:** 30 units
+* **Dec 25:** 40 units
+* **Jan 26:** 50 units
+* **Feb 26:** 27 units
+* **Mar 26:** 8 units
+* **Apr 26:** 23 units
+* **May 26:** 24 units
+* **Jun 26:** 48 units
+* **Jul 26:** 70 units
+* **Aug 26:** 49 units
+
+*(Note: The current bill for **Sep 26** shows **58 units** consumed).*"
+IESCO_0003,Q11,"If I wanted to spread my electricity cost evenly across the year, how much should I set aside each month?","Based on the provided bill, to spread your electricity cost evenly across the year, you should set aside an **estimated 848 RS per month**. 
+
+* **Calculation:** This is based on the average of the 12 months of historical bill amounts listed in the ""Bill History"" section (Sep 25 through Aug 26), which total 10,175 RS for the year. 
+* **Missing Information:** This calculation uses past billing amounts and is an estimate; future costs may vary based on your actual electricity usage and rate changes."
+IESCO_0003,Q12,"If I consume the same units as last month, what would my bill be roughly?","Based on the bill, your current consumption is **58 units**. 
+
+To estimate your bill if you consume the same units next month:
+* Looking at the **Bill History** table, when you consumed a similar amount recently (e.g., 50 units in Jan 26, 49 units in Aug 26), the billed amounts varied significantly (around Rs. 676 to Rs. 1277) due to changing fuel price adjustments, taxes, and subsidies.
+* However, your current bill for **58 units** totals **1,649 Rs.** (payable within the due date). 
+
+Therefore, if you consume the same 58 units, your bill would roughly be **1,649 Rs.** (subject to any changes in government taxes, fuel price adjustments, or subsidies applied next month)."
+IESCO_0005,Q1,Is this a net-metered (solar) connection or a standard connection? How did you tell?,"Based on the bill provided:
+
+* **Connection Type:** Standard connection (not net-metered).
+* **How I told:** Under ""Consumer Detail,"" the **Category** is listed as ""Unprotected,"" the **Tariff Category** is ""Domestic,"" and there are no indicators of solar export generation (such as ""Net Metering"" or export readings) anywhere on the bill."
+IESCO_0005,Q2,Which month in the last 12 months had the highest units consumed?,"Based on the ""Bill History"" section of the provided bill, the month in the last 12 months with the highest units consumed is **August (Aug26)** with **246 units**."
+IESCO_0005,Q3,"How much fuel adjustment am I being charged (shown as FPA or FCA on the bill), and for which month?","Based on the bill provided:
+
+* **Bill Month:** September 2026 (SEP 26)
+* **Fuel Adjustment Charged (Total FPA):** 599 Rs. (Additionally, the message box notes that this includes an FPA charge of 243 Rs. for July 2026 units)."
+IESCO_0005,Q4,"If I don't pay on time, what late payment surcharges will be added?","Based on the provided bill, if you do not pay by the due date, a late payment surcharge of **336** will be added."
+IESCO_0005,Q5,Am I consuming more units than in the same month last year?,"Based on the provided bill, the current month (Sep 26) consumption is **177 units**. 
+
+However, looking at the ""BILL HISTORY"" table, the corresponding month from last year (Sep 25) shows a consumption of **172 units**. 
+
+Therefore, you are consuming **more units (177 vs 172)** than in the same month last year."
+IESCO_0005,Q6,"What are my average monthly units consumed, and how does this month compare?","Based on the bill provided:
+
+* **This Month's Units Consumed:** 177 units (Current Bill section).
+* **Average Monthly Units Consumed:** 168 units (calculated from the 12-month history table ranging from Sep 25 to Aug 26, totaling 2,015 units). 
+* **Comparison:** This month's consumption (177 units) is **9 units higher** than the 12-month average of 168 units."
+IESCO_0005,Q7,How many more units do I consume in summer (June-August) than in winter (December-February)?,"Based on the ""Bill History"" section of the provided bill, here is the unit consumption for the requested months:
+
+**Summer (June – August):**
+* June (Jun26): 188 units
+* July (Jul26): 243 units
+* August (Aug26): 246 units
+* **Total Summer Consumption:** 677 units
+
+**Winter (December – February):**
+* December (Dec25): 139 units
+* January (Jan26): 95 units
+* February (Feb26): 166 units
+* **Total Winter Consumption:** 400 units
+
+**Difference:**
+You consume **277 more units** in summer (677 units) than in winter (400 units)."
+IESCO_0005,Q8,"Looking at the payments for the 12 months shown on the bill, have I been paying every bill?","Based on the ""Bill History"" table shown on the bill, no, you have not paid every bill. Specifically, for **May 26**, the bill amount was 3,134, but the payment recorded is **0**. All other months shown have matching payment amounts."
+IESCO_0005,Q9,Have my units consumed gone up or down over the last 3 months?,"Based on the ""BILL HISTORY"" section of the bill, your units consumed have **gone up** over the last 3 months:
+
+* **June:** 188 units
+* **July:** 243 units
+* **August:** 246 units"
+IESCO_0005,Q10,"Based on the 12 months trend, how many units should I expect to consume next month?","Based on the provided bill, information regarding the next month's expected consumption is **missing**. 
+
+However, the ""Bill History"" section shows the consumption for the past 12 months (Sep 25 to Aug 26). If you estimate based on the same month from the previous year (Sep 25), you can expect to consume **172 units** (estimated)."
+IESCO_0005,Q11,"If I wanted to spread my electricity cost evenly across the year, how much should I set aside each month?","To spread your electricity cost evenly across the year, you should set aside approximately **Rs. 5,066 per month** (Estimated).
+
+**How this was calculated:**
+Based on the ""Bill History"" table for the past 12 months (September through August), the total electricity cost (Bill Rs.) is Rs. 60,788. Dividing this total by 12 months equals an average of Rs. 5,065.67 per month."
+IESCO_0005,Q12,"If I consume the same units as last month, what would my bill be roughly?","Based on the bill, if you consume the same units as last month (177 units), your current bill amount would be **8,603 Rs** (Payable within due date)."
+KESC_0002,Q1,Is this a net-metered (solar) connection or a standard connection? How did you tell?,"Based on the provided bill, this is a **standard connection**, not a net-metered (solar) connection. 
+
+**How I can tell:**
+* The ""Bill Charge Mode"" is explicitly listed as **NORM** (Normal) in the Bill Calculation section.
+* There are no solar export readings, credits, or generation metrics shown on the bill (only standard consumption of 159 units, calculated from a previous reading of 9935 to a current reading of 10094)."
+KESC_0002,Q2,Which month in the last 12 months had the highest units consumed?,"Based on the ""13 Month Usage History"" chart on the bill, the month with the highest units consumed is **July 2026** (with **298 units**)."
+KESC_0002,Q3,"How much fuel adjustment am I being charged (shown as FPA or FCA on the bill), and for which month?","Based on the provided bill:
+
+* **Fuel Charge Adjustment (FCA):** Rs. 613.31
+* **Month:** July 2026 (listed as ""FCA :Jul-26"" under Bill Calculation)"
+KESC_0002,Q4,"If I don't pay on time, what late payment surcharges will be added?","Based on the bill, the late payment surcharges are:
+
+* **Rs. 317.96** (5%) if paid between 23-Sep-2026 and 25-Sep-2026 (making the total **Rs. 7,939**).
+* **Rs. 635.92** (10%) if paid after 25-Sep-2026 (making the total **Rs. 8,257**)."
+KESC_0002,Q5,Am I consuming more units than in the same month last year?,"Based on the ""13 Month Usage History"" chart on the bill, your consumption for **Sep 2026** is **159 units**, and the consumption for **Sep 2025** was **176 units**. 
+
+Therefore, you are **not** consuming more units than in the same month last year (your usage decreased by 17 units)."
+KESC_0002,Q6,"What are my average monthly units consumed, and how does this month compare?","Based on the provided bill:
+
+* **Current Month Consumption:** **159 units** (Sep-26).
+* **Average Monthly Consumption:** **~167 units** (calculated *Estimate* using the last 13 months shown: Sep '25 to Sep '26 total 2,171 units ÷ 13).
+* **Comparison:** This month's consumption (159 units) is **8 units lower** than your historical monthly average (~167 units)."
+KESC_0002,Q7,How many more units do I consume in summer (June-August) than in winter (December-February)?,"Based on the ""13 Month Usage History"" chart in the bill:
+
+*   **Summer consumption (June – August):**
+    *   June: 261 units
+    *   July: 298 units
+    *   August: 235 units
+    *   *Total Summer:* 794 units
+
+*   **Winter consumption (December – February):**
+    *   December: 124 units
+    *   January: 96 units
+    *   February: 88 units
+    *   *Total Winter:* 308 units
+
+**Difference:** You consume **486 more units** in summer than in winter (794 units - 308 units)."
+KESC_0002,Q8,"Looking at the payments for the 12 months shown on the bill, have I been paying every bill?",
+KESC_0002,Q9,Have my units consumed gone up or down over the last 3 months?,"Based on the ""13 Month Usage History"" and ""Electricity You Have Used"" sections of the bill:
+
+Your units consumed have **gone down** over the last 3 months. 
+
+Here is the breakdown:
+* **June 2026:** 261 units
+* **July 2026:** 298 units (Peak)
+* **August 2026:** 235 units
+* **September 2026 (Current):** 159 units"
+KESC_0002,Q10,"Based on the 12 months trend, how many units should I expect to consume next month?","Based on the ""13 Month Usage History"" chart, the usage for the upcoming month (October) is missing from the visible data labels, but looking at the trend:
+* **Previous October (2025):** 173 units
+* **Current month (September 2026):** 159 units
+
+Information is missing to precisely calculate next month's expected consumption from a strict 12-month trend calculation in the text, but you can estimate around **173 units** based on the same month from the previous year shown in the chart."
+KESC_0002,Q11,"If I wanted to spread my electricity cost evenly across the year, how much should I set aside each month?","Based on the provided bill, the exact annual electricity cost is missing because the bill only shows 13 individual monthly amounts without a yearly total. 
+
+However, we can **estimate** the monthly amount by averaging the available 3-month billing history visible in the ""Billing & Payment History"" section (June, July, and August 2026):
+
+* **June 2026:** Rs. 12,866.40
+* **July 2026:** Rs. 13,605.87
+* **August 2026:** Rs. 11,180.07
+
+**Estimated Monthly Average:** Rs. 12,550.78 per month."
+KESC_0002,Q12,"If I consume the same units as last month, what would my bill be roughly?","Based on the bill, your current month's consumption is **159 units**, which results in a current bill amount of **Rs. 7,620.53**. 
+
+If you consume the exact same units next month, your estimated total bill would be roughly **Rs. 7,621** (ignoring any past dues or remaining balances, as those change monthly)."
+KESC_0003,Q1,Is this a net-metered (solar) connection or a standard connection? How did you tell?,"This is a **standard connection**, not a net-metered (solar) connection. 
+
+**How I can tell:**
+* The **Bill Charge Mode** is explicitly listed as **NORM** (Normal) in the Bill Calculation section.
+* There are no net-metering credits, export units, or generation readings shown on the bill."
+KESC_0003,Q2,Which month in the last 12 months had the highest units consumed?,"Based on the ""13 Month Usage History"" chart on the bill, the month in the last 12 months with the highest units consumed is **August 2026** (with **622 units**)."
+KESC_0003,Q3,"How much fuel adjustment am I being charged (shown as FPA or FCA on the bill), and for which month?","Based on the provided bill:
+
+* **Fuel Adjustment Charge (FCA):** Rs. 1,280.14
+* **Month:** July 2026 (labeled as ""FCA :Jul-26"")"
+KESC_0003,Q4,"If I don't pay on time, what late payment surcharges will be added?","Based on the bill, if you do not pay by the due date, the following late payment surcharges apply:
+
+* **Rs. 1,049.45** (5%) if paid between 25-Sep-26 and 27-Sep-26 (totaling Rs. 26,296).
+* **Rs. 2,098.90** (10%) if paid after 27-Sep-26 (totaling Rs. 27,345)."
+KESC_0003,Q5,Am I consuming more units than in the same month last year?,"Based on the provided bill, **yes**, you are consuming more units than in the same month last year:
+
+* **Current Month Consumption (Sep 2026):** 459 units
+* **Same Month Last Year (Sep 2025):** 374 units *(found in the ""13 Month Usage History"" chart)*
+* **Difference:** You consumed **85 more units** this year."
+KESC_0003,Q6,"What are my average monthly units consumed, and how does this month compare?","Based on the provided bill:
+
+* **This month's consumption:** You consumed **459 units** (kWh) for the current month.
+* **Average monthly units consumed:** **336 units** (calculated by averaging the 12 months shown in the ""13 Month Usage History"" chart: Sep 2025 through Aug 2026, totaling 4,032 units divided by 12).
+* **Comparison:** This month's consumption (459 units) is **123 units higher** than your 12-month average."
+KESC_0003,Q7,How many more units do I consume in summer (June-August) than in winter (December-February)?,"Based on the ""13 Month Usage History"" chart provided in the bill:
+
+* **Summer (June-August 2026):** 
+  * June: 563 units
+  * July: 622 units
+  * August: 576 units
+  * *Summer Total:* **1,761 units**
+
+* **Winter (December 2025 - February 2026):** 
+  * December: 277 units
+  * January: 179 units
+  * February: 151 units
+  * *Winter Total:* **607 units**
+
+* **Difference:** You consume **1,154 more units** in summer than in winter (1,761 - 607)."
+KESC_0003,Q8,"Looking at the payments for the 12 months shown on the bill, have I been paying every bill?","Based on the ""Billing & Payment History"" section of the bill, information is missing for the full 12 months, as only the last 4 months (June 2026 to September 2026) are shown. 
+
+For the 4 months that are displayed, you have paid every bill (and in each case, the payment made was slightly higher than the billed amount)."
+KESC_0003,Q9,Have my units consumed gone up or down over the last 3 months?,"Based on the ""13 Month Usage History"" chart, your units consumed have **gone up** over the last 3 months:
+
+* **June 2026:** 563 units
+* **July 2026:** 622 units
+* **August 2026:** 576 units *(slight dip)*
+* **September 2026:** 459 units *(wait, looking strictly at the last 3 visible bars for Jul-Sep: Jul was 622, Aug was 576, Sep was 459 - overall the trend across the summer peaked in July and went down in August and September).* 
+
+Let's look at the actual billed consumption values listed in the chart for the last 3 months:
+* **July (Jul):** 622 units
+* **August (Aug):** 576 units
+* **September (Sep):** 459 units
+
+Therefore, your consumption has **gone down** over the last 3 months (from 622 in July down to 459 in September)."
+KESC_0003,Q10,"Based on the 12 months trend, how many units should I expect to consume next month?","Based on the ""13 Month Usage History"" chart, you should expect to consume approximately **374 units** next month (corresponding to the usage shown for September of the previous year, Sep 2025)."
+KESC_0003,Q11,"If I wanted to spread my electricity cost evenly across the year, how much should I set aside each month?","To spread your electricity cost evenly across the year, you should set aside **Rs. 2,965.88 per month** (Estimated). 
+
+**Calculation & Details:**
+* **Total Annual Cost:** Rs. 35,590.50 (Calculated by adding the last 4 months of billed amounts from the ""Billing & Payment History"" table—Rs. 30,854.10 + Rs. 33,987.16 + Rs. 31,254.95 + Rs. 25,245.77 [Current Month]—and multiplying the average of these months by 12).
+* **Monthly Average:** Rs. 35,590.50 ÷ 12 months = Rs. 2,965.88.
+* **Missing Information:** The bill only provides complete billing history for 4 months (June to September). Costs for the remaining 8 months are estimated based on this available period."
+KESC_0003,Q12,"If I consume the same units as last month, what would my bill be roughly?","Based on the provided bill, if you consume the same units (459 kWh) next month, your estimated bill would be **Rs. 25,246** if paid by the due date (24-Sep-2026), or **Rs. 27,345** if paid after the due date (after 27-Sep-2026). 
+
+* **Estimated Bill (Within Due Date):** Rs. 25,246
+* **Estimated Bill (After Due Date):** Rs. 27,345"
+KESC_0005,Q1,Is this a net-metered (solar) connection or a standard connection? How did you tell?,"This is a **standard connection**, not a net-metered (solar) connection. 
+
+**How I can tell:**
+* The **Bill Charge Mode** is explicitly listed as **NORM** (Normal) under the ""Bill Calculation"" section. 
+* There are no mentions of export readings, generation units, or credits typically found on net-metered bills; the electricity usage table only shows standard consumption units (Off-Peak: 238 kWh, Peak: 48 kWh)."
+KESC_0005,Q2,Which month in the last 12 months had the highest units consumed?,"Based on the ""13 Month Usage History"" chart on the bill, **June 2025** had the highest units consumed (438 units)."
+KESC_0005,Q3,"How much fuel adjustment am I being charged (shown as FPA or FCA on the bill), and for which month?","Based on the provided bill, you are being charged **Rs. 290.39** for the fuel adjustment (shown as FCA). 
+
+* **Month:** Feb-26 (February 2026)"
+KESC_0005,Q4,"If I don't pay on time, what late payment surcharges will be added?","Based on the provided bill:
+
+If you pay late, the following surcharges will be added depending on when you pay:
+
+* **5% Late Payment Surcharge:** Rs. 724.07 (applicable if paid between 21-Apr and 23-Apr).
+* **10% Late Payment Surcharge:** Rs. 1,448.13 (applicable if paid after 23-Apr)."
+KESC_0005,Q5,Am I consuming more units than in the same month last year?,"Based on the provided bill:
+
+Yes, you are consuming more units than in the same month last year. 
+* **Current month (Apr 2026):** 286 units
+* **Same month last year (Apr 2025):** 214 units"
+KESC_0005,Q6,"What are my average monthly units consumed, and how does this month compare?","Based on the provided bill:
+
+*   **Current Month Units Consumed:** You consumed **286 units** this month (Apr-2026), as shown in the ""Current Month"" and ""Electricity You Have Used"" sections.
+*   **Average Monthly Units Consumed:** Based on the visible 13-month usage history (Apr 2025 to Apr 2026), your average consumption is approximately **263 units** per month *(Calculated as the sum of all 13 months, 3,423 units, divided by 13)*.
+*   **Comparison:** This month's consumption of 286 units is **above your average** by 23 units."
+KESC_0005,Q7,How many more units do I consume in summer (June-August) than in winter (December-February)?,"Based on the ""13 Month Usage History"" chart on the bill:
+
+*   **Summer (June – August 2025):** 
+    *   June: 438 units (Estimate)
+    *   July: 306 units (Estimate)
+    *   August: 249 units (Estimate)
+    *   *Total Summer Consumption:* **993 units** (Estimate)
+
+*   **Winter (December 2025 – February 2026):** 
+    *   December: 227 units (Estimate)
+    *   January: 169 units (Estimate)
+    *   February: 204 units (Estimate)
+    *   *Total Winter Consumption:* **600 units** (Estimate)
+
+*   **Difference:** You consumed **393 more units** in the summer than in the winter (Estimate)."
+KESC_0005,Q8,"Looking at the payments for the 12 months shown on the bill, have I been paying every bill?","Based on the ""Billing & Payment History"" section of the bill, information is missing. The section only displays the last 3 months of history (Jan 2026, Feb 2026, and Mar 2026) rather than a full 12 months. 
+
+For the 3 months shown, you have paid every bill in full:
+* **Jan 2026:** Billed 10,059.17 / Paid 10,059.00
+* **Feb 2026:** Billed 12,294.67 / Paid 12,295.00
+* **Mar 2026:** Billed 12,136.42 / Paid 12,136.00"
+KESC_0005,Q9,Have my units consumed gone up or down over the last 3 months?,"Based on the ""13 Month Usage History"" chart on the bill, your units consumed have **gone up** over the last 3 months:
+
+*   **January 2026:** 169 units
+*   **February 2026:** 204 units
+*   **March 2026:** 185 units *(slight dip)*
+*   **April 2026:** 286 units"
+KESC_0005,Q10,"Based on the 12 months trend, how many units should I expect to consume next month?","Based on the ""13 Month Usage History"" chart on the bill, the usage for the upcoming month (May) is not explicitly projected. However, looking at the historical data for the previous May (May 2025), you consumed **255 units**. 
+
+*(Note: Consumption varies by season, so actual usage may differ.)*"
+KESC_0005,Q11,"If I wanted to spread my electricity cost evenly across the year, how much should I set aside each month?","To spread your electricity cost evenly across the year, you should set aside an estimated **Rs. 2,130.40** each month. 
+
+*(Note: This estimate is calculated by averaging the billed amounts shown in the ""13 Month Usage History"" table for the past 4 months—Jan: 10,059.17, Feb: 12,294.67, Mar: 12,136.02, and Apr: 17,296.50—totaling Rs. 51,786.36 divided by 4 months. Data for the remaining 9 months of the year is missing from the bill.)*"
+KESC_0005,Q12,"If I consume the same units as last month, what would my bill be roughly?","Based on the provided bill, if you consume the same units (286 units) as this month (Apr-2026), your estimated current bill amount would be roughly **Rs. 17,296.50** (or **Rs. 17,297**). 
+
+*Note: This estimate reflects the current month's charges based on 286 consumed units. Your final total may vary depending on whether you have an opening balance, previous dues, or make payments by the due date (20th Apr 2026), which would add late payment surcharges.*"
+KESC_0006,Q1,Is this a net-metered (solar) connection or a standard connection? How did you tell?,"This is a standard connection, not a net-metered (solar) connection. 
+
+**How I told:**
+* The **Bill Charge Mode** in the Bill Calculation section is listed as **NORM**.
+* There are no mentions of export readings, generation units, or net-metering credits anywhere on the bill."
+KESC_0006,Q2,Which month in the last 12 months had the highest units consumed?,"Based on the ""13 Month Usage History"" chart in the provided bill, the month with the highest units consumed is **June (2026)** with **838 units**."
+KESC_0006,Q3,"How much fuel adjustment am I being charged (shown as FPA or FCA on the bill), and for which month?","Based on the provided bill:
+
+* **Fuel Adjustment Charge (FCA):** You are being charged **Rs. 1,294.54**.
+* **Month:** This charge is for **July 2026** (listed as ""FCA :Jul-26"" in the Bill Calculation section)."
+KESC_0006,Q4,"If I don't pay on time, what late payment surcharges will be added?","Based on the bill, the late payment surcharges are:
+
+* **Late Payment Surcharge (5%):** Rs. 830.14 (applicable if paid between 23-Sep-26 and 25-Sep-26, bringing the total to Rs. 20,795)
+* **Late Payment Surcharge (10%):** Rs. 1,660.28 (applicable if paid after 25-Sep-26, bringing the total to Rs. 21,624)"
+KESC_0006,Q5,Am I consuming more units than in the same month last year?,"Based on the provided bill, you consumed **371 units** in the current billing month (September 2026). According to the ""13 Month Usage History"" chart, your consumption for the same month last year (September 2025) was **344 units**. 
+
+Therefore, you are consuming **27 more units** than in the same month last year."
+KESC_0006,Q6,"What are my average monthly units consumed, and how does this month compare?","Based on the provided bill:
+
+* **This month's consumption:** 371 units (Sep 2026).
+* **Average monthly units consumed:** 368 units (calculated from the visible 13-month history: Sep '25 to Sep '26 totals 4,784 units / 13 months).
+* **Comparison:** This month's consumption (371 units) is very close to the 13-month average of 368 units (an increase of just 3 units)."
+KESC_0006,Q7,How many more units do I consume in summer (June-August) than in winter (December-February)?,"Based on the ""13 Month Usage History"" chart in the provided bill:
+
+* **Summer Consumption (June – August):**
+  * June: 838 units
+  * July: 629 units
+  * August: 455 units
+  * *Total Summer:* **1,922 units**
+
+* **Winter Consumption (December – February):**
+  * December: 171 units
+  * January: 135 units
+  * February: 196 units
+  * *Total Winter:* **502 units**
+
+* **Difference:** 
+  * 1,922 (Summer) − 502 (Winter) = **1,420 units**
+
+You consume **1,420 more units** in summer than in winter."
+KESC_0006,Q8,"Looking at the payments for the 12 months shown on the bill, have I been paying every bill?","Based on the ""Billing & Payment History"" section, only the last 3 months are shown (June 2026, July 2026, and August 2026). For those 3 months, the payments made match the billed amounts:
+
+*   **06/26:** Billed Rs. 57,777.49 | Paid Rs. 57,778.00
+*   **07/26:** Billed Rs. 37,822.27 | Paid Rs. 37,822.00
+*   **08/26:** Billed Rs. 24,552.09 | Paid Rs. 24,552.00
+
+**Information missing:** The bill does not show a full 12 months of payment history (only 3 rows are listed in the table, despite the graph showing 13 months of usage), so payment status for the remaining months cannot be verified."
+KESC_0006,Q9,Have my units consumed gone up or down over the last 3 months?,"Based on the ""13 Month Usage History"" section of the bill, your units consumed have **gone up** over the last 3 months:
+
+* **June 2026:** 838 units
+* **July 2026:** 629 units (went down)
+* **August 2026:** 455 units (went down)
+* **September 2026:** 371 units (went down)
+
+*(Note: If comparing strictly the last 3 recorded months—June, July, and August—the consumption trend overall went down. However, looking at the previous billing history table, your billed consumption for June was 838 units, July was 629, and August was 455, showing a decrease over that specific 3-month span.)*"
+KESC_0006,Q10,"Based on the 12 months trend, how many units should I expect to consume next month?","Based on the provided bill, the ""13 Month Usage History"" chart lists the following historical consumption:
+
+* **Oct 2025:** 342 units
+* **Nov 2025:** 369 units
+* **Dec 2025:** 171 units
+* **Jan 2026:** 135 units
+* **Feb 2026:** 196 units
+* **Mar 2026:** 209 units
+* **Apr 2026:** 290 units
+* **May 2026:** 412 units
+* **Jun 2026:** 838 units
+* **Jul 2026:** 629 units
+* **Aug 2026:** 455 units
+* **Sep 2026 (Current):** 371 units
+
+**Missing Information:** The chart labels 13 months, but the month directly following September (October) is not shown on the trend chart, and no explicit forecast is stated on the bill."
+KESC_0006,Q11,"If I wanted to spread my electricity cost evenly across the year, how much should I set aside each month?","Based on the provided bill, information for a full 12-month average is missing (only 4 months of historical billing amounts are shown). 
+
+However, using the available 4-month history (June 2026 to September 2026), your estimated monthly set-aside would be **Rs. 30,233.19** (calculated by summing the billed amounts for 06/26, 07/26, 08/26, and Sep-26, then dividing by 4)."
+KESC_0006,Q12,"If I consume the same units as last month, what would my bill be roughly?","Based on the provided bill, if you consume the same units (371 kWh) next month, your estimated bill would be **Rs. 19,964** (Amount Payable within Due Date), provided there are no previous balances, adjustments, or changes in variable taxes and tariffs. 
+
+* **Estimated Bill (Due Date):** Rs. 19,964
+* **Estimated Bill (After Due Date):** Rs. 21,624"
+LESCO_0001,Q1,Is this a net-metered (solar) connection or a standard connection? How did you tell?,"Based on the bill, this is a **standard connection**, not a net-metered (solar) connection. 
+
+**How I can tell:**
+* The **Category** section lists the status as **""Unprotected""** rather than a net-metered designation.
+* The **Bill History** table shows all historical billing statuses as **""EX""** (standard consumed units) with positive energy usage every month, rather than showing exported energy (generation back to the grid)."
+LESCO_0001,Q2,Which month in the last 12 months had the highest units consumed?,"Based on the ""Bill History"" section of the bill, the month in the last 12 months with the highest units consumed was **March 2026 (MAR26)** with **201 units**."
+LESCO_0001,Q3,"How much fuel adjustment am I being charged (shown as FPA or FCA on the bill), and for which month?","Based on the provided bill:
+
+* **Fuel Price Adjustment (FPA):** You are being charged **471** (Total FPA).
+* **Bill Month:** **SEP 26**"
+LESCO_0001,Q4,"If I don't pay on time, what late payment surcharges will be added?","Based on the provided bill:
+
+* **Late Payment Surcharge (L.P. Surcharge):** 339
+* **Payable Within Due Date:** 8,567 (Due September 28, 2026)
+* **Payable After Due Date:** 
+  * Till 01--CT: 8,906
+  * After 01--CT: 9,245
+
+If paid after the due date, a late payment surcharge of **339** is added, increasing the total to **8,906** (or **9,245** depending on the specific post-due date tier)."
+LESCO_0001,Q5,Am I consuming more units than in the same month last year?,"Based on the bill:
+
+* **Current Month Consumption (SEP 26):** 188 units (as shown in the Meter Info section).
+* **Same Month Last Year:** Information for the same month last year is missing from the bill history table."
+LESCO_0001,Q6,"What are my average monthly units consumed, and how does this month compare?","Based on the provided bill:
+
+* **This Month's Consumption:** 188 units (SEP 26)
+* **Average Monthly Consumption:** 188.75 units (Calculated from the past 12 months shown in the bill history: Sep-Feb and Mar-Aug)."
+LESCO_0001,Q7,How many more units do I consume in summer (June-August) than in winter (December-February)?,"Based on the bill history section, here are the units consumed during the requested months:
+
+**Summer (June–August):**
+* June (JUN26): 179 units
+* July (JUL26): 191 units
+* August (AUG26): 185 units
+* **Summer Total:** 555 units
+
+**Winter (December–February):**
+* December (DEC25): 189 units
+* January (JAN26): 182 units
+* February (FEB26): 182 units
+* **Winter Total:** 553 units
+
+**Calculation:**
+555 (Summer) - 553 (Winter) = **2 units**
+
+You consume **2 more units** in summer than in winter."
+LESCO_0001,Q8,"Looking at the payments for the 12 months shown on the bill, have I been paying every bill?","Based on the Bill History table for the 12 months shown (September through August), **yes, you have been paying every bill.** For every month listed, the payment amount matches the bill amount."
+LESCO_0001,Q9,Have my units consumed gone up or down over the last 3 months?,"Based on the ""Bill History"" section of the bill, your consumed units over the last 3 months went up and then down:
+
+* **June:** 179 units
+* **July:** 191 units (Up)
+* **August:** 185 units (Down)"
+LESCO_0001,Q10,"Based on the 12 months trend, how many units should I expect to consume next month?","Based on the 12-month consumption history shown in the ""BILL HISTORY"" section of the bill, here are the units consumed each month leading up to the current bill (Sep 26):
+
+* **Oct 25:** 192 units
+* **Nov 25:** 191 units
+* **Dec 25:** 189 units
+* **Jan 26:** 182 units
+* **Feb 26:** 182 units
+* **Mar 26:** 201 units
+* **Apr 26:** 165 units
+* **May 26:** 192 units
+* **Jun 26:** 179 units
+* **Jul 26:** 191 units
+* **Aug 26:** 185 units
+* **Sep 26 (Current):** 188 units
+
+**Expected Next Month Consumption:**
+* **Average (Estimate):** **187 units** (calculated as the average of the past 12 months: 2,244 total units / 12 months).
+* **Previous Year Corresponding Month (Oct 25 Estimate):** **192 units**."
+LESCO_0001,Q11,"If I wanted to spread my electricity cost evenly across the year, how much should I set aside each month?","To spread your electricity cost evenly across the year, you should set aside an estimated **8,170.83** each month. 
+
+**Calculation details:**
+* **Total cost for the past 12 months (Sept through Aug):** 98,050 (Calculated by summing the ""BILL (RS.)"" column from the Bill History table: 2,179 + 2,377 + 2,547 + 2,780 + 2,705 + 2,871 + 10,410 + 7,783 + 8,520 + 8,026 + 8,027 + 7,895).
+* **Monthly average:** 98,050 ÷ 12 months = 8,170.83.
+* **Note:** This figure is an **estimate** based on historical billing data shown on the bill."
+LESCO_0001,Q12,"If I consume the same units as last month, what would my bill be roughly?","Based on the bill, your consumption last month (AUG26) was **185 units**, which resulted in a bill of **7,895 Rs.** 
+
+* **Estimated Bill:** Roughly 7,895 Rs. (assuming the same unit consumption)."
+LESCO_0002,Q1,Is this a net-metered (solar) connection or a standard connection? How did you tell?,"This is a **standard connection**, not a net-metered (solar) connection. 
+
+**How I can tell:**
+* The **Category** under Consumer Detail is listed as ""Unprotected"" and the **Tariff Category** is ""Domestic"" with no mention of solar or green generation.
+* The **Meter Info** section only shows standard ""Previous Reading"" (42159) and ""Present Reading"" (42576) with positive consumption units (417 units), lacking the dual-register readings (import/export) typical of net-metered bills."
+LESCO_0002,Q2,Which month in the last 12 months had the highest units consumed?,"Based on the ""BILL HISTORY"" section of the bill, the month in the last 12 months with the highest units consumed is **August (AUG26)** with **426 units**."
+LESCO_0002,Q3,"How much fuel adjustment am I being charged (shown as FPA or FCA on the bill), and for which month?","Based on the provided bill:
+
+* **Bill Month:** SEP 26
+* **Fuel Price Adjustment (Total FPA):** Rs. 806 (Note: The bill also includes an Urdu note stating that this FPA charge includes the fuel adjustment for July 26)."
+LESCO_0002,Q4,"If I don't pay on time, what late payment surcharges will be added?","Based on the provided bill:
+
+* **Payable within due date (by Sep 28, 26):** 24,372
+* **Payable after due date (Till 01--CT):** 25,359
+* **Payable after due date (After 01--CT):** 26,345
+* **Late Payment Surcharge:** 987 (explicitly listed as ""L.P SURCHARGE"")"
+LESCO_0002,Q5,Am I consuming more units than in the same month last year?,"Based on the ""BILL HISTORY"" section of the bill, the consumption for the current month (SEP 25) is **30 units**. 
+
+Information for the same month in the previous year (SEP 24) is missing from the provided bill history, so a direct comparison cannot be made."
+LESCO_0002,Q6,"What are my average monthly units consumed, and how does this month compare?","Based on the provided bill:
+
+* **This Month's Consumption:** 417 units (SEP 26)
+* **Average Monthly Consumption:** 215 units (calculated from the 12-month ""Bill History"" table, which totals 2,577 units across the available 12 months).
+* **Comparison:** This month's consumption (417 units) is **202 units higher** than your historical monthly average of 215 units (nearly double)."
+LESCO_0002,Q7,How many more units do I consume in summer (June-August) than in winter (December-February)?,"Based on the ""BILL HISTORY"" section of the provided bill, here are the units consumed for the requested months:
+
+*   **Summer (June–August):**
+    *   June (JUN26): 245 units
+    *   July (JUL26): 327 units
+    *   August (AUG26): 426 units
+    *   *Summer Total:* 998 units
+
+*   **Winter (December–February):**
+    *   December (DEC25): 123 units
+    *   January (JAN26): 96 units
+    *   February (FEB26): 73 units
+    *   *Winter Total:* 292 units
+
+**Calculation:**
+998 units (Summer) - 292 units (Winter) = **706 more units**
+
+You consume **706 more units** in the summer than in the winter."
+LESCO_0002,Q8,"Looking at the payments for the 12 months shown on the bill, have I been paying every bill?","Based on the ""Bill History"" section showing the past 12 months, **yes**, you have been paying every bill. For every listed month, the payment amount matches the billed amount."
+LESCO_0002,Q9,Have my units consumed gone up or down over the last 3 months?,"Based on the ""Bill History"" section of the bill, your units consumed have **gone up** over the last 3 months:
+
+*   **JUN26:** 327 units
+*   **JUL26:** 426 units
+*   **AUG26:** (Missing from the table - wait, looking at the table columns: JUN26 shows 327, JUL26 shows 426... let's check the chronological order).
+
+Looking at the chronological sequence in the Bill History:
+*   **JUN26:** 327 units
+*   **JUL26:** 426 units
+
+*(Note: The history table lists months in two columns. Reading down the right column: MAR26: 78, APR26: 128, MAY26: 201, JUN26: 245, JUL26: 327, AUG26: 426).* 
+
+Over the last 3 listed consecutive months (MAY26 to AUG26), the consumption increased from **201** units (May) to **245** (June), **327** (July), and **426** units (August)."
+LESCO_0002,Q10,"Based on the 12 months trend, how many units should I expect to consume next month?","Based on the provided bill, information is missing. The bill shows a ""Bill History"" for the past 12 months (September to August), but it does not provide a trend-based forecast or a specific expected consumption figure for next month. 
+
+However, looking at the historical consumption (Units) from the Bill History section:
+* **SEP25:** 30
+* **OCT25:** 829
+* **NOV25:** 239
+* **DEC25:** 123
+* **JAN26:** 96
+* **FEB26:** 73
+* **MAR26:** 78
+* **APR26:** 128
+* **MAY26:** 201
+* **JUN26:** 245
+* **JUL26:** 327
+* **AUG26:** 426
+
+*(Note: Consumption varies significantly month-to-month, ranging from 30 to 829 units, so a reliable estimate cannot be directly calculated without additional context.)*"
+LESCO_0002,Q11,"If I wanted to spread my electricity cost evenly across the year, how much should I set aside each month?","Based on the BILL HISTORY section of the provided bill, here is the breakdown of your electricity costs over the past 12 months (Sep 25 to Aug 26):
+
+* **Total annual cost:** Rs. 130,551 (Sum of all 12 monthly bills)
+* **Monthly average:** Rs. 10,879.25
+
+To spread your electricity cost evenly across the year, you should set aside approximately **Rs. 10,879.25** each month (Estimated)."
+LESCO_0002,Q12,"If I consume the same units as last month, what would my bill be roughly?","Based on the provided bill, your consumption for the current month (SEP 26) is **417 units** (listed under ""Units"" in the Meter Info section). 
+
+Looking at the Bill History section for previous months:
+* **AUG 26:** 426 units cost **23,655 Rs.**
+
+If you consume roughly the same units as last month (426 units, which is very close to your current 417 units), your bill would be roughly **23,655 Rs.**"
+LESCO_0008,Q1,Is this a net-metered (solar) connection or a standard connection? How did you tell?,
+LESCO_0008,Q2,Which month in the last 12 months had the highest units consumed?,
+LESCO_0008,Q3,"How much fuel adjustment am I being charged (shown as FPA or FCA on the bill), and for which month?",
+LESCO_0008,Q4,"If I don't pay on time, what late payment surcharges will be added?",
+LESCO_0008,Q5,Am I consuming more units than in the same month last year?,
+LESCO_0008,Q6,"What are my average monthly units consumed, and how does this month compare?",
+LESCO_0008,Q7,How many more units do I consume in summer (June-August) than in winter (December-February)?,
+LESCO_0008,Q8,"Looking at the payments for the 12 months shown on the bill, have I been paying every bill?",
+LESCO_0008,Q9,Have my units consumed gone up or down over the last 3 months?,
+LESCO_0008,Q10,"Based on the 12 months trend, how many units should I expect to consume next month?",
+LESCO_0008,Q11,"If I wanted to spread my electricity cost evenly across the year, how much should I set aside each month?",
+LESCO_0008,Q12,"If I consume the same units as last month, what would my bill be roughly?",
